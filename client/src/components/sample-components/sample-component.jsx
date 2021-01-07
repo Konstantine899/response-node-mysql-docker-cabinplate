@@ -3,7 +3,7 @@ import axios from 'axios';
 
 function callServer() {
   axios
-    .get('http://localhost:8000/test', {
+    .get(`http://localhost:${process.env.REACT_APP_SERVER_PORT}/test`, {
       params: {
         table: 'sample',
       },
