@@ -65,8 +65,14 @@ services:
       - 3000
     ports:
       - 3000:3000
+    restart: unless-stopped
+    command: npm run start
+    environment:
+      - CHOKIDAR_USEPOLLING=true
+    stdin_open: true
+    tty: true
     volumes:
       - ./client/src:/app/src
     links:
       - server
-    command: npm run start
+    
