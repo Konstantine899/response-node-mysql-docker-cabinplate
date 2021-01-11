@@ -16,7 +16,7 @@ function callServer() {
 export function SampleComponent() {
   return (
     <div>
-      Это пример компонента
+      <b>Жыве Беларусь</b>
       {callServer()}
     </div>
   );

@@ -1,5 +1,5 @@
 import React from 'react';
-import { SampleComponent } from '../components/sample-components/sample-component';
+import { SampleComponent } from '../components/index';
 
 function App() {
   return <SampleComponent />;
